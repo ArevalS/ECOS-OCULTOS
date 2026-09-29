@@ -1,0 +1,1130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+:root {
+
+    --background: #080c09;
+    --background2: #0d130f;
+
+    --text: #f1f4ef;
+
+    --muted: #89948b;
+
+    --green: #a8d58d;
+
+    --line: #273029;
+
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+
+}
+
+
+.page {
+
+    overflow: hidden;
+
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+
+.navbar {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 10;
+
+}
+
+
+.logo {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    font-size: 15px;
+
+}
+
+
+.logo span {
+
+    color: var(--green);
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+
+.nav-links a {
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: .3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--green);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 8% 100px;
+
+    overflow: hidden;
+
+}
+
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    right: -200px;
+    top: 50px;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(91, 142, 70, .20),
+
+            transparent 70%
+
+        );
+
+    filter: blur(15px);
+
+}
+
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: -250px;
+    bottom: -250px;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(45, 85, 48, .20),
+
+            transparent 70%
+
+        );
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 950px;
+
+}
+
+
+.eyebrow {
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero h1 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: .93;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--green);
+
+}
+
+
+.hero p {
+
+    max-width: 600px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+.main-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+
+    padding: 16px 22px;
+
+    background: var(--text);
+
+    color: #080c09;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.main-button:hover {
+
+    background: var(--green);
+
+    transform: translateY(-3px);
+
+}
+
+
+.hero-bottom {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 8%;
+    right: 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #566159;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================
+   CONCEPTO
+========================= */
+
+
+.concept-section {
+
+    padding: 150px 10%;
+
+    border-top: 1px solid var(--line);
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 50px;
+
+}
+
+
+.section-number {
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.concept-content {
+
+    max-width: 850px;
+
+}
+
+
+.small-title {
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.concept-content h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin: 25px 0 45px;
+
+}
+
+
+.concept-content h2 span {
+
+    display: block;
+
+    color: #657067;
+
+}
+
+
+.concept-content p {
+
+    max-width: 650px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+.concept-content strong {
+
+    color: var(--text);
+
+}
+
+
+/* =========================
+   SONIDOS
+========================= */
+
+
+.sounds-section {
+
+    padding: 130px 7%;
+
+    background: var(--background2);
+
+}
+
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-header h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 50px;
+
+    letter-spacing: -2px;
+
+    margin-top: 15px;
+
+}
+
+
+.section-header > p {
+
+    color: var(--muted);
+
+    text-align: right;
+
+    line-height: 1.7;
+
+}
+
+
+.sound-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.sound-card {
+
+    background: #101611;
+
+    border: 1px solid var(--line);
+
+    transition: .4s;
+
+}
+
+
+.sound-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #50604f;
+
+}
+
+
+/* IMAGEN DEL SONIDO */
+
+
+.sound-visual {
+
+    height: 260px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.insects {
+
+    background:
+
+        radial-gradient(
+
+            circle at 50% 50%,
+
+            #405e37,
+
+            transparent 20%
+
+        ),
+
+        radial-gradient(
+
+            circle at 20% 80%,
+
+            #172b18,
+
+            transparent 40%
+
+        ),
+
+        #0b120c;
+
+}
+
+
+.forest {
+
+    background:
+
+        radial-gradient(
+
+            circle at 30% 30%,
+
+            #314b30,
+
+            transparent 25%
+
+        ),
+
+        radial-gradient(
+
+            circle at 80% 70%,
+
+            #1a2c1b,
+
+            transparent 40%
+
+        ),
+
+        #0a100c;
+
+}
+
+
+.insects2 {
+
+    background:
+
+        radial-gradient(
+
+            circle at 70% 40%,
+
+            #596842,
+
+            transparent 18%
+
+        ),
+
+        radial-gradient(
+
+            circle at 20% 70%,
+
+            #2d4028,
+
+            transparent 35%
+
+        ),
+
+        #10150e;
+
+}
+
+
+.visual-label {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    padding: 7px 10px;
+
+    background: rgba(0,0,0,.35);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: #b8c0b9;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ONDA */
+
+.wave {
+
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 35px;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+}
+
+
+.wave span {
+
+    width: 3px;
+
+    background: var(--green);
+
+    border-radius: 5px;
+
+    animation: wave 1.2s infinite alternate;
+
+}
+
+
+.wave span:nth-child(1) { height: 20px; }
+.wave span:nth-child(2) { height: 50px; }
+.wave span:nth-child(3) { height: 80px; }
+.wave span:nth-child(4) { height: 35px; }
+.wave span:nth-child(5) { height: 90px; }
+.wave span:nth-child(6) { height: 45px; }
+.wave span:nth-child(7) { height: 70px; }
+.wave span:nth-child(8) { height: 30px; }
+.wave span:nth-child(9) { height: 60px; }
+.wave span:nth-child(10) { height: 40px; }
+
+
+@keyframes wave {
+
+    from {
+
+        transform: scaleY(.5);
+
+        opacity: .5;
+
+    }
+
+    to {
+
+        transform: scaleY(1.1);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* INFORMACIÓN */
+
+
+.sound-info {
+
+    padding: 25px;
+
+}
+
+
+.number {
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.sound-info h3 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.sound-info p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.play-button {
+
+    margin-top: 25px;
+
+    padding: 11px 16px;
+
+    background: transparent;
+
+    border: 1px solid #3b463d;
+
+    color: var(--text);
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.play-button span {
+
+    color: var(--green);
+
+    margin-right: 8px;
+
+}
+
+
+.play-button:hover {
+
+    background: var(--green);
+
+    color: #080c09;
+
+}
+
+
+/* =========================
+   PROYECTO
+========================= */
+
+
+.project-section {
+
+    padding: 150px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.project-text h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin: 25px 0 35px;
+
+}
+
+
+.project-text h2 span {
+
+    display: block;
+
+    color: #657067;
+
+}
+
+
+.project-text p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* VISUALIZADOR */
+
+
+.visualizer {
+
+    height: 350px;
+
+    background: #050705;
+
+    border: 1px solid var(--line);
+
+    padding: 25px;
+
+}
+
+
+.visualizer-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #69736b;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.live {
+
+    color: var(--green);
+
+}
+
+
+.spectrum {
+
+    height: 250px;
+
+    margin-top: 20px;
+
+    border-bottom: 1px solid #29312b;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: center;
+
+    gap: 5px;
+
+}
+
+
+.spectrum i {
+
+    width: 7px;
+
+    background: var(--green);
+
+    opacity: .65;
+
+    animation: spectrum 1.3s infinite alternate ease-in-out;
+
+}
+
+
+.spectrum i:nth-child(1) { height: 20%; }
+.spectrum i:nth-child(2) { height: 40%; }
+.spectrum i:nth-child(3) { height: 65%; }
+.spectrum i:nth-child(4) { height: 30%; }
+.spectrum i:nth-child(5) { height: 80%; }
+.spectrum i:nth-child(6) { height: 50%; }
+.spectrum i:nth-child(7) { height: 90%; }
+.spectrum i:nth-child(8) { height: 45%; }
+.spectrum i:nth-child(9) { height: 70%; }
+.spectrum i:nth-child(10) { height: 35%; }
+.spectrum i:nth-child(11) { height: 85%; }
+.spectrum i:nth-child(12) { height: 50%; }
+.spectrum i:nth-child(13) { height: 30%; }
+.spectrum i:nth-child(14) { height: 75%; }
+.spectrum i:nth-child(15) { height: 95%; }
+.spectrum i:nth-child(16) { height: 40%; }
+.spectrum i:nth-child(17) { height: 60%; }
+.spectrum i:nth-child(18) { height: 30%; }
+.spectrum i:nth-child(19) { height: 75%; }
+.spectrum i:nth-child(20) { height: 45%; }
+
+
+@keyframes spectrum {
+
+    from {
+
+        transform: scaleY(.5);
+
+    }
+
+    to {
+
+        transform: scaleY(1);
+
+    }
+
+}
+
+
+.frequency-labels {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #555f58;
+
+    font-size: 9px;
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+    padding: 50px 7%;
+
+    border-top: 1px solid var(--line);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #657067;
+
+    font-size: 11px;
+
+}
+
+
+.footer-logo {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--text);
+
+}
+
+
+.footer-logo span {
+
+    color: var(--green);
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+
+@media (max-width: 800px) {
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding: 130px 7% 100px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .concept-section {
+
+        grid-template-columns: 1fr;
+
+        padding: 100px 7%;
+
+    }
+
+
+    .section-header {
+
+        display: block;
+
+    }
+
+
+    .section-header > p {
+
+        text-align: left;
+
+        margin-top: 20px;
+
+    }
+
+
+    .sound-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project-section {
+
+        grid-template-columns: 1fr;
+
+        padding: 100px 7%;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+}
+
+/* =========================================
+   REPRODUCTOR DE AUDIO
+   ========================================= */
+
+.audio-player {
+    width: 100%;
+    margin-top: 14px;
+}
+
+
+/* Barra de progreso */
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: rgba(168, 213, 141, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+/* Parte que avanza */
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #a8d58d;
+    border-radius: 10px;
+    transition: width 0.08s linear;
+}
+
+
+/* Tiempo */
+
+.audio-times {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+
+    font-size: 11px;
+    color: #89948b;
+    font-family: "DM Sans", sans-serif;
+}
